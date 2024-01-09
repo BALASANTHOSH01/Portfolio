@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Kanit:wght@200&family=Open+Sans:wght@300&family=Rubik+Glitch&family=Ubuntu&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @keyframes heroAnimation {
+    0%{
+        background-color: black;
+        transform: translateX(-50%);
+        border-radius: 50px;
+        translate: ;
+    }
+    25%{
+        background-color: rgb(242, 211, 57);
+        transform: translateX(-50%);
+    }
+    60%{
+        background-color: rgb(198, 122, 75);
+        transform: translateX(-50%);
+    }
+    75%{
+        background-color: rgb(239, 68, 68);
+        transform: translateX(-50%);
+    }
+    100%{
+        background-color:black;
+        transform: translateX(-50%);
+    }
+}
+
+
+.animation{
+    width:100%;
+    animation: heroAnimation 5s ease infinite;
+} */
