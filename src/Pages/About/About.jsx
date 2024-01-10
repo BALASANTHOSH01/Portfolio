@@ -17,12 +17,12 @@ const About = () => {
                     />
                 </div>
 
-                <div className="w-[50%] sm:w-[70%] sm:block sm:mx-auto sm:mt-[10%] text-center mr-[2%] relative">
+                <div className="w-[60%] sm:w-[70%] sm:block sm:mx-auto sm:mt-[10%] text-center mr-[2%] relative">
                     <h1 className=" font-salsa tracking-widest text-white italic text-[40px] sm:text-[34px]">
                         Who am i ?
                     </h1>
 
-                    <div className="w-[60%] sm:w-[85%] sm:mt-[6%] text-left mx-auto my-2 mt-3 items-center text-[13px] sm:text-[13px]">
+                    <div className="w-[60%] sm:w-[100%] sm:mt-[6%] text-left mx-auto my-2 mt-3 items-center text-[13px] sm:text-[13px]">
                         <p className=" text-gray-400 tracking-wider">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                             Similique nostrum pariatur cum voluptates perspiciatis enim
