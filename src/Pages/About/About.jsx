@@ -19,7 +19,7 @@ const About = () => {
 
                 <div className="w-[50%] text-center mr-[2%] relative">
                     <h1 className=" font-salsa tracking-widest text-white italic text-[40px]">
-                        How am i ?
+                        Who am i ?
                     </h1>
 
                     <div className="w-[60%] text-left mx-auto my-2 mt-3 items-center ">
