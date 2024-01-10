@@ -9,7 +9,9 @@ const Footer = () => {
         <div className="flex flex-row gap-7">
           <div className="flex flex-col gap-3 mb-3">
             <a href="" className="flex flex-row items-center gap-1">
+              <Link to={"/"}>
               Work
+              </Link>
               <PiLinkSimple />
             </a>
             <a href="" className="flex flex-row items-center gap-1">
