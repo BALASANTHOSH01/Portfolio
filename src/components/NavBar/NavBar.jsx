@@ -2,6 +2,7 @@ import { FaLinkedinIn as LinkedIn } from "react-icons/fa";
 import { FaGithub as Github} from "react-icons/fa6";
 import { MdAlternateEmail as Email } from "react-icons/md";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -55,9 +56,11 @@ const NavBar = () => {
               }
               onClick={() => {
                 handleActive("skills");
-              }} href="/about"
+              }} 
             >
+              <Link to={"/about"}>
               About
+              </Link>
             </a>
             <a
               className={
