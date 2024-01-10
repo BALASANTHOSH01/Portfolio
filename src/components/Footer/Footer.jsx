@@ -1,4 +1,5 @@
 import { PiLinkSimple } from "react-icons/pi";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -12,7 +13,9 @@ const Footer = () => {
               <PiLinkSimple />
             </a>
             <a href="" className="flex flex-row items-center gap-1">
+              <Link to={"/about"}>
               About
+              </Link>
               <PiLinkSimple />
             </a>
             <a
