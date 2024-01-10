@@ -7,13 +7,17 @@ export default {
   theme: {
     fontFamily:{
       ubunto : ['Ubuntu', "sans-serif"],
-      Rubik:["Rubik Glitch", "ubunto"],
-      gooper:["Caprasimo"]
+      Poppins:["Poppins", "ubunto"],
+      salsa:["Salsa"],
+      Rubik:["Rubik Glitch"]
     },
     extend: {
       screens:{
         "usm": "430px"
-      }
+      },
+      backgroundImage:{
+        "profileBG":"url('./src/assets/Images/BS.jpg')",
+      },
     },
   },
   plugins: [],

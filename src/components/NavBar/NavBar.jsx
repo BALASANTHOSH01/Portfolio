@@ -43,6 +43,7 @@ const NavBar = () => {
               onClick={() => {
                 handleActive("home");
               }}
+              
             >
               Work 
             </a>
@@ -54,7 +55,7 @@ const NavBar = () => {
               }
               onClick={() => {
                 handleActive("skills");
-              }} href=""
+              }} href="/about"
             >
               About
             </a>
