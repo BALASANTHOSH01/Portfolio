@@ -29,7 +29,7 @@ const NavBar = () => {
   
   return (
     <div className={scroll ? `bg-transparent`:``} >
-      <div className="flex p-3 w-[90%] mx-auto sm:justify-between items-center text-white sm:p-2">
+      <div className="flex p-3 w-[90%] mx-auto sm:justify-between items-center text-white sm:p-6">
         <div className=" w-[40%] sm:w-[50%]">
           <p className=" font-Rubik text-3xl text-transparent bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text">BS</p>
         </div>
