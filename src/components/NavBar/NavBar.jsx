@@ -51,7 +51,10 @@ const NavBar = () => {
               }}
               
             >
-              Work 
+              <Link to={"/"}>
+              Work
+              </Link>
+               
             </a>
             <a
               className={
