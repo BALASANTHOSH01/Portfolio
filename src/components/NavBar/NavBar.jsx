@@ -1,41 +1,54 @@
 import { FaLinkedinIn as LinkedIn } from "react-icons/fa";
-import { FaGithub as Github} from "react-icons/fa6";
+import { FaGithub as Github } from "react-icons/fa6";
 import { MdAlternateEmail as Email } from "react-icons/md";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { Link } from "react-router-dom";
 import { CgMenuRight } from "react-icons/cg";
 
 const NavBar = () => {
+
+  //Nav Item Active
   const [activeLink, setActiveLink] = useState("home");
-  const [scroll, setScroll] =  useState(false);
-
-  useEffect(()=>{
-
-    const onscroll = ()=>{
-      if(window.scrollY>50){
-        setScroll(true);
-      } else{
-        setScroll(false);
-      }
-    }
-
-    window.addEventListener("scroll",onscroll);
-    return()=> window.removeEventListener("scroll",onscroll);
-  },[]);
-
   const handleActive = (page) => {
     setActiveLink(page);
   };
-  
+
+  //Menu Toggle
+  const [menuclikced, setMenuClicked] = useState(false);
+  const MenuToggle = () => {
+    setMenuClicked(!menuclikced);
+  }
+
+  //Menu Item Clicked 
+  const ItemClicked = () => {
+    setTimeout(MenuToggle(), 5000);
+  }
+
   return (
-    <div className={scroll ? `bg-transparent`:``} >
+    <div >
       <div className="flex p-3 w-[90%] mx-auto sm:justify-between items-center text-white sm:p-6">
         <div className=" w-[40%] sm:w-[50%]">
           <p className=" font-Rubik text-3xl text-transparent bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text">BS</p>
         </div>
 
-        <div className="hidden cursor-pointer sm:flex flex-row justify-end text-white text-3xl">
-            <CgMenuRight className=""/>
+        <div className="hidden cursor-pointer sm:flex flex-row justify-end text-white text-3xl w-[40%] ">
+          <CgMenuRight onClick={() => MenuToggle()} />
+
+          {
+            menuclikced === true ?
+              <div className="flex flex-col text-[17px] absolute top-[15%] right-[20%] z-50 bg-white text-gray-600 px-2 py-2 rounded-[30px]">
+                <Link to={"/"} className="hover:bg-gray-300 px-10 py-2 rounded-[30px]" onClick={() => ItemClicked()}>Work</Link>
+                <Link to={"/about"} className="hover:bg-gray-300 px-10 py-1 rounded-[30px]" onClick={() => ItemClicked()}>About</Link>
+
+                {/* <Link className="hover:bg-gray-300 px-10 py-1 rounded-[30px]" onClick={() => ItemClicked()}>
+                </Link> */}
+                <a href="https://drive.google.com/file/d/1XzZXETsDT63iAUCjnhnLQLihli7zMnLT/view?usp=drive_link"
+                  target="_blank" rel="noreferrer" className="hover:bg-gray-300 px-10 py-1 rounded-[30px]" onClick={() => ItemClicked()}>Resume</a>
+
+                <Link to={"/connect"} className="hover:bg-gray-300 px-10 py-1 rounded-[30px]" onClick={() => ItemClicked()}>Connect</Link>
+              </div> : <></>
+          }
+
         </div>
 
         <div className="sm:hidden flex  w-[60%] justify-evenly">
@@ -49,12 +62,12 @@ const NavBar = () => {
               onClick={() => {
                 handleActive("home");
               }}
-              
+
             >
               <Link to={"/"}>
-              Work
+                Work
               </Link>
-               
+
             </a>
             <a
               className={
@@ -64,10 +77,10 @@ const NavBar = () => {
               }
               onClick={() => {
                 handleActive("skills");
-              }} 
+              }}
             >
               <Link to={"/about"}>
-              About
+                About
               </Link>
             </a>
             <a
@@ -82,7 +95,7 @@ const NavBar = () => {
               href="https://drive.google.com/file/d/1XzZXETsDT63iAUCjnhnLQLihli7zMnLT/view?usp=drive_link"
               target="_blank" rel="noreferrer"
             >
-              
+
               Resume
             </a>
           </div>
@@ -93,11 +106,11 @@ const NavBar = () => {
             </a>
 
             <a href="https://github.com/BALASANTHOSH01" className="border-white border p-2 rounded-[50%] cursor-pointer hover:bg-white   hover:duration-200 no-underline group/github" target="_blank" rel="noreferrer">
-              <Github className="group-hover/github:p-[2px] group-hover/github:text-black duration-700"/>
+              <Github className="group-hover/github:p-[2px] group-hover/github:text-black duration-700" />
             </a>
 
             <a href="https://www.instagram.com/santhooosh_1" className="border-white border p-2 rounded-[50%] cursor-pointer hover:bg-white  hover:duration-200 no-underline group/instagram" target="_blank" rel="noreferrer">
-              <Email className="group-hover/instagram:p-[2px] group-hover/instagram:text-black duration-700"/>
+              <Email className="group-hover/instagram:p-[2px] group-hover/instagram:text-black duration-700" />
             </a>
           </div>
 

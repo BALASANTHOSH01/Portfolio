@@ -22,7 +22,7 @@ const About = () => {
                         Who am i ?
                     </h1>
 
-                    <div className="w-[60%] sm:w-[100%] sm:mt-[6%] text-left mx-auto my-2 mt-3 items-center text-[13px] sm:text-[13px]">
+                    <div className="w-[65%] sm:w-[100%] sm:mt-[6%] text-left mx-auto my-2 mt-3 items-center text-[13px] sm:text-[13px]">
                         <p className=" text-gray-400 tracking-wider">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                             Similique nostrum pariatur cum voluptates perspiciatis enim
