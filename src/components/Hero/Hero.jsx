@@ -30,7 +30,7 @@ const Hero = () => {
         </div> {/**Mobile */}
 
         <p className=" text-white w-[80%] sm:w-[90%] text-[30px] sm:text-[20px] mt-8 tracking-widest font-Poppins font-thin text-center">
-          is a full-stack developer who creates the web application with user-preferred customization.
+          I&apos;m a full-stack developer who creates the web application with user-preferred customization.
         </p>
 
         <div className="flex flex-row sm:flex-col  gap-[12%] mt-[5%] sm:mt-[7%] sm:ml-[10%]">

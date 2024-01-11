@@ -28,25 +28,25 @@ const NavBar = () => {
     <div >
       <div className="flex p-3 w-[90%] mx-auto sm:justify-between items-center text-white sm:p-6">
         <div className=" w-[40%] sm:w-[50%]">
-          <p className=" font-Rubik text-3xl sm:text-[45px] text-transparent bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text">BS</p>
+          <p className=" font-Rubik text-3xl sm:text-[40px] text-transparent bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text">BS</p>
         </div>
 
-        <div className="hidden cursor-pointer sm:flex flex-row justify-end text-white text-[45px] w-[40%] ">
+        <div className="hidden cursor-pointer sm:flex flex-row justify-end text-white text-[38px] w-[40%] ">
           <CgMenuRight onClick={() => MenuToggle()} />
 
           {
             menuclikced === true ?
               <div className="flex flex-col text-[17px] absolute top-[15%] right-[10%] z-50 bg-white text-gray-600 px-5 py-5 rounded-[30px]">
-                <Link to={"/"} className="hover:bg-gray-300 px-24 py-5 text-[30px] rounded-[30px] " onClick={() => ItemClicked()}>Work</Link>
-                <Link to={"/about"} className="hover:bg-gray-300 px-24 py-5 text-[30px] rounded-[30px] " onClick={() => ItemClicked()}>About</Link>
+                <Link to={"/"} className="hover:bg-gray-300 px-24 py-5 text-[22px] rounded-[30px] " onClick={() => ItemClicked()}>Work</Link>
+                <Link to={"/about"} className="hover:bg-gray-300 px-24 py-5 text-[22px] rounded-[30px] " onClick={() => ItemClicked()}>About</Link>
 
                 {/* <Link className="hover:bg-gray-300 px-10 py-1 rounded-[30px]" onClick={() => ItemClicked()}>
                 </Link> */}
 
                 <a href="https://drive.google.com/file/d/1XzZXETsDT63iAUCjnhnLQLihli7zMnLT/view?usp=drive_link"
-                  target="_blank" rel="noreferrer" className="hover:bg-gray-300 px-24 py-5 text-[30px] rounded-[30px] " onClick={() => ItemClicked()}>Resume</a>
+                  target="_blank" rel="noreferrer" className="hover:bg-gray-300 px-24 py-5 text-[22px] rounded-[30px] " onClick={() => ItemClicked()}>Resume</a>
 
-                <Link to={"/connect"} className="hover:bg-gray-300 px-24 py-5 text-[30px] rounded-[30px] " onClick={() => ItemClicked()}>Connect</Link>
+                <Link to={"/connect"} className="hover:bg-gray-300 px-24 py-5 text-[22px] rounded-[30px] " onClick={() => ItemClicked()}>Connect</Link>
               </div> : <></>
           }
 

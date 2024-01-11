@@ -36,7 +36,7 @@ const Footer = () => {
               <PiLinkSimple />
             </a>
           </div>
-          <div className="flex flex-col gap-3 sm:ml-[4%] sm:mt-[2%]">
+          <div className="flex flex-col gap-5 sm:p-3 sm:ml-[4%] sm:mt-[2%]">
             <a
               href="https://www.linkedin.com/in/bala-santhosh-bs05052004"
               className="flex flex-row items-center gap-1"
