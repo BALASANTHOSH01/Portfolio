@@ -29,7 +29,7 @@ const Hero = () => {
           <h1 className="text-[45px]">Santhosh</h1>
         </div> {/**Mobile */}
 
-        <p className=" text-white w-[80%] sm:w-[90%] text-[30px] sm:text-[20px] mt-8 tracking-widest font-Poppins font-thin text-center">
+        <p className=" text-white w-[70%] sm:w-[90%] text-[28px] sm:text-[20px] mt-8 tracking-widest font-Poppins font-thin text-left">
           I&apos;m a full-stack developer who creates the web application with user-preferred customization.
         </p>
 

@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div className="my-[5%]">
             <div className="flex flex-row sm:block justify-around mx-auto p-2">
-                <div className="w-[40%] sm:w-[70%] sm:block sm:mx-auto sm:mt-[2%]">
+                <div className="w-[40%] sm:w-[90%] sm:block sm:mx-auto sm:mt-[2%]">
                     <div
                         className={`w-[40%] sm:w-[50%] items-center bg-profileBG blur-3xl absolute h-[40vh] box-border`}
                     ></div>
@@ -13,7 +13,7 @@ const About = () => {
                     <img
                         src={BS}
                         alt="profile"
-                        className="rounded-[50%] relative w-[70%]  mx-auto "
+                        className="rounded-[50%] relative w-[85%]  mx-auto "
                     />
                 </div>
 

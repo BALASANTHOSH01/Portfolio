@@ -1,7 +1,7 @@
 import { FaLinkedinIn as LinkedIn } from "react-icons/fa";
 import { FaGithub as Github } from "react-icons/fa6";
 import { MdAlternateEmail as Email } from "react-icons/md";
-import {  useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { CgMenuRight } from "react-icons/cg";
 
@@ -43,10 +43,10 @@ const NavBar = () => {
                 {/* <Link className="hover:bg-gray-300 px-10 py-1 rounded-[30px]" onClick={() => ItemClicked()}>
                 </Link> */}
 
+                <Link to={"/contact_me"} className="hover:bg-gray-300 px-24 py-5 text-[22px] rounded-[30px] " onClick={() => ItemClicked()}>Connect</Link>
+
                 <a href="https://drive.google.com/file/d/1XzZXETsDT63iAUCjnhnLQLihli7zMnLT/view?usp=drive_link"
                   target="_blank" rel="noreferrer" className="hover:bg-gray-300 px-24 py-5 text-[22px] rounded-[30px] " onClick={() => ItemClicked()}>Resume</a>
-
-                <Link to={"/connect"} className="hover:bg-gray-300 px-24 py-5 text-[22px] rounded-[30px] " onClick={() => ItemClicked()}>Connect</Link>
               </div> : <></>
           }
 
@@ -115,9 +115,9 @@ const NavBar = () => {
             </a>
           </div>
 
-          <div className="p-3 border-white border cursor-pointer w-[20%] lg:w-[30%] items-center text-center hover:bg-white hover:text-black hover:rounded-[25px] hover:duration-200 focus:outline-none focus:border-red-400 focus:ring-1">
+          <Link to={"/contact_me"} className="p-3 border-white border cursor-pointer w-[20%] lg:w-[30%] items-center text-center hover:bg-white hover:text-black hover:rounded-[25px] hover:duration-200 focus:outline-none focus:border-green-400 focus:ring-2">
             <p className="text-[70%] font-bold">Let&apos;s Connect</p>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

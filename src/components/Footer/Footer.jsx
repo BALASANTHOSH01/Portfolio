@@ -36,7 +36,7 @@ const Footer = () => {
               <PiLinkSimple />
             </a>
           </div>
-          <div className="flex flex-col gap-5 sm:p-3 sm:ml-[4%] sm:mt-[2%]">
+          <div className="flex flex-col gap-3 sm:p-3 sm:ml-[4%] sm:mt-[2%]">
             <a
               href="https://www.linkedin.com/in/bala-santhosh-bs05052004"
               className="flex flex-row items-center gap-1"
@@ -84,9 +84,11 @@ const Footer = () => {
           BS
         </p>
 
-        <div className="hidden sm:block mx-auto p-2 w-[45%] border border-black text-center rounded-[50px] hover:text-white bg-black hover:shadow-md">
-            <FaTelegramPlane className="text-white mx-auto"/>
-        </div>
+        <Link to={"/contact_me"}>
+          <div className="hidden sm:block mx-auto p-2 w-[45%] border border-black text-center rounded-[50px] hover:text-white bg-black hover:shadow-md">
+            <FaTelegramPlane className="text-white mx-auto" />
+          </div>
+        </Link>
 
       </div>
     </div>
