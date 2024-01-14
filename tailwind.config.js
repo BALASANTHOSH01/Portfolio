@@ -9,7 +9,7 @@ export default {
       ubunto : ['Ubuntu', "sans-serif"],
       Poppins:["Poppins", "ubunto"],
       salsa:["Salsa"],
-      // Rubik:["Rubik Glitch"]
+      Rubik:["Rubik Glitch"]
     },
     extend: {
       screens: {

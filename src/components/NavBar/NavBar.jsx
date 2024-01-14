@@ -28,7 +28,7 @@ const NavBar = () => {
     <div >
       <div className="flex p-3 w-[90%] mx-auto sm:justify-between items-center text-white sm:p-6">
         <div className=" w-[40%] sm:w-[50%]">
-          <p className=" font-Rubik text-3xl sm:text-[40px] text-transparent bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text">BS</p>
+          <p className=" text-3xl sm:text-[40px] text-transparent bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text font-Rubik">BS</p>
         </div>
 
         <div className="hidden cursor-pointer sm:flex flex-row justify-end text-white text-[38px] w-[40%] ">

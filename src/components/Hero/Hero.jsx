@@ -18,7 +18,7 @@ const Hero = () => {
         </div>
 
 
-        <h1 className="sm:hidden font-salsa italic text-transparent bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text text-[48px] tracking-widest">
+        <h1 className="sm:hidden italic text-transparent bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text text-[48px] tracking-widest font-salsa">
           Bala Santhosh
         </h1>
 
