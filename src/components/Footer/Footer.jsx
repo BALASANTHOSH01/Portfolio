@@ -16,7 +16,7 @@ const Footer = () => {
             <a href="" className="flex flex-row items-center gap-1">
 
               <Link to={"/"}>
-                Work
+                Home
               </Link>
               <PiLinkSimple />
             </a>

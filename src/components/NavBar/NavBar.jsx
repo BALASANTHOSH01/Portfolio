@@ -1,122 +1,87 @@
-import { FaLinkedinIn as LinkedIn } from "react-icons/fa";
-import { FaGithub as Github } from "react-icons/fa6";
+import { Link, useLocation } from "react-router-dom";
+import { FaLinkedinIn as LinkedIn } from "react-icons/fa6";
+import { IoLogoGithub as Github } from "react-icons/io5";
 import { MdAlternateEmail as Email } from "react-icons/md";
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { CgMenuRight } from "react-icons/cg";
+import { useEffect, useState } from "react";
 
 const NavBar = () => {
+  const location = useLocation();
 
-  //Nav Item Active
-  const [activeLink, setActiveLink] = useState("home");
-  const handleActive = (page) => {
-    setActiveLink(page);
+  const [navItem, setNavItem] = useState("home");
+  const handleNav = (page) => {
+    setNavItem(page);
   };
 
-  //Menu Toggle
-  const [menuclikced, setMenuClicked] = useState(false);
-  const MenuToggle = () => {
-    setMenuClicked(!menuclikced);
-  }
-
-  //Menu Item Clicked 
-  const ItemClicked = () => {
-    setTimeout(MenuToggle(), 5000);
-  }
+  useEffect(() => {
+    switch (location.pathname) {
+      case "/about":
+        setNavItem("about");
+        break;
+      case "/contact_me":
+        setNavItem("contact");
+        break;
+      default:
+        setNavItem("home");
+        break;
+    }
+  }, []);
 
   return (
-    <div >
-      <div className="flex p-3 w-[90%] mx-auto sm:justify-between items-center text-white sm:p-6">
-        <div className=" w-[40%] sm:w-[50%]">
-          <p className=" text-3xl sm:text-[40px] text-transparent bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text font-Rubik">BS</p>
+    <div>
+      <div className=" flex flex-row justify-between w-full px-[5%] p-4">
+        <div className=" w-[20%]">
+          <p className=" text-3xl sm:text-[40px] text-transparent bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text font-Rubik">
+            BS
+          </p>
         </div>
 
-        <div className="hidden cursor-pointer sm:flex flex-row justify-end text-white text-[38px] w-[40%] ">
-          <CgMenuRight onClick={() => MenuToggle()} />
+        <div className=" flex flex-row justify-between ml-[7%] text-gray-400 w-[25%]">
+          <Link
+            to={"/"}
+            className={`${navItem === "home" && "text-white"}`}
+            onClick={() => handleNav("home")}
+          >
+            Home
+          </Link>
 
-          {
-            menuclikced === true ?
-              <div className="flex flex-col text-[17px] absolute top-[15%] right-[10%] z-50 bg-white text-gray-600 px-5 py-5 rounded-[30px]">
-                <Link to={"/"} className="hover:bg-gray-300 px-24 py-5 text-[22px] rounded-[30px] " onClick={() => ItemClicked()}>Work</Link>
-                <Link to={"/about"} className="hover:bg-gray-300 px-24 py-5 text-[22px] rounded-[30px] " onClick={() => ItemClicked()}>About</Link>
+          <Link
+            to={"/about"}
+            className={`${navItem === "about" && "text-white"}`}
+            onClick={() => handleNav("about")}
+          >
+            About
+          </Link>
 
-                {/* <Link className="hover:bg-gray-300 px-10 py-1 rounded-[30px]" onClick={() => ItemClicked()}>
-                </Link> */}
-
-                <Link to={"/contact_me"} className="hover:bg-gray-300 px-24 py-5 text-[22px] rounded-[30px] " onClick={() => ItemClicked()}>Connect</Link>
-
-                <a href="https://drive.google.com/file/d/1XzZXETsDT63iAUCjnhnLQLihli7zMnLT/view?usp=drive_link"
-                  target="_blank" rel="noreferrer" className="hover:bg-gray-300 px-24 py-5 text-[22px] rounded-[30px] " onClick={() => ItemClicked()}>Resume</a>
-              </div> : <></>
-          }
-
+          <Link
+            to={"/resume"}
+            className={`${navItem === "resume" && "text-white"}`}
+            onClick={() => handleNav("resume")}
+          >
+            Resume
+          </Link>
         </div>
 
-        <div className="sm:hidden flex  w-[60%] justify-evenly">
-          <div className="flex w-[40%] md:w-[50%] justify-around md:justify-between items-center">
-            <a
-              className={
-                activeLink === "home"
-                  ? `text-white cursor-pointer flex flex-row gap-1 items-center`
-                  : `text-gray-400 cursor-pointer flex flex-row gap-1 items-center`
-              }
-              onClick={() => {
-                handleActive("home");
-              }}
+        <div className=" flex flex-row justify-around w-[30%] items-center">
+          <div className=" flex flex-row gap-5 items-center">
+            
+            <Link to={"www.linkedin.com/in/balasanthosh01"} rel="noreferrer" className="text-white bg-transparent border border-white rounded-[50%] cursor-pointer text-[20px] p-[7px] hover:bg-white hover:text-black hover:p-[10px] duration-200 w-[30px] h-[30px] flex justify-center items-center">
+              <LinkedIn />
+            </Link>
 
-            >
-              <Link to={"/"}>
-                Work
-              </Link>
+            <Link to={""} className="text-white bg-transparent border border-white rounded-[50%] cursor-pointer text-[20px] p-[7px] hover:bg-white hover:text-black hover:p-[10px] duration-200 w-[30px] h-[30px] flex justify-center items-center">
+              <Github />
+            </Link>
 
-            </a>
-            <a
-              className={
-                activeLink === "skills"
-                  ? `text-white cursor-pointer`
-                  : `text-gray-400 cursor-pointer`
-              }
-              onClick={() => {
-                handleActive("skills");
-              }}
-            >
-              <Link to={"/about"}>
-                About
-              </Link>
-            </a>
-            <a
-              className={
-                activeLink === "projects"
-                  ? `text-white cursor-pointer`
-                  : `text-gray-400 cursor-pointer`
-              }
-              onClick={() => {
-                handleActive("projects");
-              }}
-              href="https://drive.google.com/file/d/1XzZXETsDT63iAUCjnhnLQLihli7zMnLT/view?usp=drive_link"
-              target="_blank" rel="noreferrer"
-            >
-
-              Resume
-            </a>
+            <Link to={""} className="text-white bg-transparent border border-white rounded-[50%] cursor-pointer text-[20px] p-[7px] hover:bg-white hover:text-black hover:p-[10px] duration-200 w-[30px] h-[30px] flex justify-center items-center">
+              <Email />
+            </Link>
           </div>
 
-          <div className="md:hidden flex w-[25%] justify-around items-center">
-            <a href="https://www.linkedin.com/in/bala-santhosh-bs05052004" className="border-white border p-2 rounded-[50%] cursor-pointer hover:bg-white  hover:duration-200 no-underline group/linkedin" target="_blank" rel="noreferrer">
-              <LinkedIn className="group-hover/linkedin:p-[2px] group-hover/linkedin:text-black duration-700" />
-            </a>
-
-            <a href="https://github.com/BALASANTHOSH01" className="border-white border p-2 rounded-[50%] cursor-pointer hover:bg-white   hover:duration-200 no-underline group/github" target="_blank" rel="noreferrer">
-              <Github className="group-hover/github:p-[2px] group-hover/github:text-black duration-700" />
-            </a>
-
-            <a href="https://www.instagram.com/santhooosh_1" className="border-white border p-2 rounded-[50%] cursor-pointer hover:bg-white  hover:duration-200 no-underline group/instagram" target="_blank" rel="noreferrer">
-              <Email className="group-hover/instagram:p-[2px] group-hover/instagram:text-black duration-700" />
-            </a>
-          </div>
-
-          <Link to={"/contact_me"} className="p-3 border-white border cursor-pointer w-[20%] lg:w-[30%] items-center text-center hover:bg-white hover:text-black hover:rounded-[25px] hover:duration-200 focus:outline-none focus:border-green-400 focus:ring-2">
-            <p className="text-[70%] font-bold">Let&apos;s Connect</p>
+          <Link
+            to={"/contact_me"}
+            className=" border border-white text-white bg-transparent duration-500 hover:rounded-[25px] hover:bg-white hover:font-bold hover:text-black font-Poppins font-bold text-center py-[8px] px-[10px] text-[14px] cursor-pointer"
+          >
+            <p>Let&apos;s Connect</p>
           </Link>
         </div>
       </div>
