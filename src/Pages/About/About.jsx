@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div>
 
-      <h1 className=" text-white font-semibold text-[30px] text-center mb-[10%]">About Me</h1>
+      <h1 className="hidden md:block text-white font-semibold text-[30px] text-center mb-[10%]">About Me</h1>
       <img
         src={BS_Img}
         alt="Img"
