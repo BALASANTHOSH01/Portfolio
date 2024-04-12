@@ -7,7 +7,8 @@ import { FaTelegramPlane } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className=" flex flex-row items-center justify-around sm:justify-between  bg-white p-3 text-black">
+    <div className="bg-white p-3 text-black relative">
+      <div className=" flex flex-row items-center justify-around sm:justify-between  ">
       <div className=" flex flex-col sm:w-[60%]">
         <h2 className="my-5 sm:hidden">Let&apos;s Build Something ImpactFull</h2>
 
@@ -91,6 +92,7 @@ const Footer = () => {
         </Link>
 
       </div>
+    </div>
     </div>
   );
 };

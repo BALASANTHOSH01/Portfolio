@@ -1,7 +1,7 @@
 
 const Contact = () => {
   return (
-    <div className="block p-5 px-8 rounded-[10px] bg-white mx-auto sm:w-[90%] w-[40%] my-16 mb-24">
+    <div className="block p-5 px-8 rounded-[10px] bg-white mx-auto sm:w-[90%] md:w-[70%] w-[40%] my-16 mb-24">
         <div className="flex flex-col">
             <h1 className="text-center text-2xl font-bold my-3 font-Poppins text-transparent bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text">Contact Me</h1>
             <label htmlFor="name">Name :</label>
