@@ -7,7 +7,6 @@ const About = () => {
   return (
     <div className="mt-[5%] relative">
 
-      <AboutAnimation/>
 
       <h1 className="hidden md:block  text-white font-semibold text-[30px] text-center mb-[10%]">About Me</h1>
       <img
