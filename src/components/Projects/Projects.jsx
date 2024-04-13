@@ -1,4 +1,7 @@
-import {GreenHarbor,Opensource,Noter,Foodspot,Infest2k24} from "../../assets/Images/Projects/index.js"
+import {GreenHarbor,Opensource,Noter,Foodspot,Infest2k24} from "../../assets/Images/Projects/index.js";
+import { SiGithub as GithubIcon } from "react-icons/si";
+import { BsBrowserChrome as BrowserIcon } from "react-icons/bs";
+
 
 const Projects = () => {
   return (
@@ -18,6 +21,16 @@ const Projects = () => {
                     <p className="text-gray-400 w-[70%] mx-auto my-[3%]">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo accusantium ipsa cumque, officiis eveniet ad, cum est nam assumenda vero voluptas! Esse illo neque commodi non. Vel, quibusdam. Reiciendis, obcaecati?
                     </p>
+
+                    <div className=" flex flex-row items-center text-[20px] w-[20%] mx-auto justify-around py-[2%]">
+                        <a href="" className="cursor-pointer text-white p-2 border border-white rounded-[50%] hover:text-black hover:bg-white duration-500">
+                        <GithubIcon/>
+                        </a>
+
+                        <a href="" className="cursor-pointer text-white p-2 border border-white rounded-[50%] hover:text-black hover:bg-white duration-500">
+                        <BrowserIcon/>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -30,6 +43,16 @@ const Projects = () => {
                     <p className="text-gray-400 w-[70%] mx-auto my-[3%]">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo accusantium ipsa cumque, officiis eveniet ad, cum est nam assumenda vero voluptas! Esse illo neque commodi non. Vel, quibusdam. Reiciendis, obcaecati?
                     </p>
+
+                    <div className=" flex flex-row items-center text-[20px] w-[20%] mx-auto justify-around py-[2%]">
+                        <a href="" className="cursor-pointer text-white p-2 border border-white rounded-[50%] hover:text-black hover:bg-white duration-500">
+                        <GithubIcon/>
+                        </a>
+
+                        <a href="" className="cursor-pointer text-white p-2 border border-white rounded-[50%] hover:text-black hover:bg-white duration-500">
+                        <BrowserIcon/>
+                        </a>
+                    </div>
                 </div>
 
                 <img src={Opensource} alt="project_img" className="w-[40%] h-[65vh] rounded-[10px]"/>
@@ -46,6 +69,16 @@ const Projects = () => {
                     <p className="text-gray-400 w-[70%] mx-auto my-[3%]">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo accusantium ipsa cumque, officiis eveniet ad, cum est nam assumenda vero voluptas! Esse illo neque commodi non. Vel, quibusdam. Reiciendis, obcaecati?
                     </p>
+
+                    <div className=" flex flex-row items-center text-[20px] w-[20%] mx-auto justify-around py-[2%]">
+                        <a href="" className="cursor-pointer text-white p-2 border border-white rounded-[50%] hover:text-black hover:bg-white duration-500">
+                        <GithubIcon/>
+                        </a>
+
+                        <a href="" className="cursor-pointer text-white p-2 border border-white rounded-[50%] hover:text-black hover:bg-white duration-500">
+                        <BrowserIcon/>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -58,6 +91,16 @@ const Projects = () => {
                     <p className="text-gray-400 w-[70%] mx-auto my-[3%]">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo accusantium ipsa cumque, officiis eveniet ad, cum est nam assumenda vero voluptas! Esse illo neque commodi non. Vel, quibusdam. Reiciendis, obcaecati?
                     </p>
+
+                    <div className=" flex flex-row items-center text-[20px] w-[20%] mx-auto justify-around py-[2%]">
+                        <a href="" className="cursor-pointer text-white p-2 border border-white rounded-[50%] hover:text-black hover:bg-white duration-500">
+                        <GithubIcon/>
+                        </a>
+
+                        <a href="" className="cursor-pointer text-white p-2 border border-white rounded-[50%] hover:text-black hover:bg-white duration-500">
+                        <BrowserIcon/>
+                        </a>
+                    </div>
                 </div>
 
                 <img src={Infest2k24} alt="project_img" className="w-[40%] h-[65vh] rounded-[10px]"/>
@@ -75,6 +118,16 @@ const Projects = () => {
                     <p className="text-gray-400 w-[70%] mx-auto my-[3%]">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo accusantium ipsa cumque, officiis eveniet ad, cum est nam assumenda vero voluptas! Esse illo neque commodi non. Vel, quibusdam. Reiciendis, obcaecati?
                     </p>
+
+                    <div className=" flex flex-row items-center text-[20px] w-[20%] mx-auto justify-around py-[2%]">
+                        <a href="" className="cursor-pointer text-white p-2 border border-white rounded-[50%] hover:text-black hover:bg-white duration-500">
+                        <GithubIcon/>
+                        </a>
+
+                        <a href="" className="cursor-pointer text-white p-2 border border-white rounded-[50%] hover:text-black hover:bg-white duration-500">
+                        <BrowserIcon/>
+                        </a>
+                    </div>
 
                 </div>
             </div>
