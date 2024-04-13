@@ -19,7 +19,7 @@ const NavBar = () => {
     setMobileNav((prev)=>!prev);
   }
   useEffect(()=>{
-    handleMobileNav();
+    setMobileNav(false);
   },[location.pathname])
 
   useEffect(() => {
