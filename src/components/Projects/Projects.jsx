@@ -10,7 +10,7 @@ const Projects = () => {
             <h1 className=" text-[35px] md:text-[30px] py-[5%] text-white font-bold uppercase text-center">Empowering Projects</h1>
 
             <div className="flex flex-row md:flex-col gap-7 py-[5%] md:py-[7%]   md:my-[10%] md:rounded-[5px]  items-center" >
-                <img src={GreenHarbor} alt="project_img" className="w-[40%] md:w-[90%] h-[65vh] md:h-[35vh] rounded-[10px] md:rounded-[5px]"/>
+                <img src={GreenHarbor} alt="project_img" className="w-[40%] md:w-[95%] h-[65vh] md:h-[35vh] rounded-[10px] md:rounded-[5px]"/>
 
                 <div className="text-center ">
                     <h1 className="text-[30px] uppercase my-[2%] font-semibold">GreenHarbor</h1>
@@ -57,13 +57,13 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <img src={Opensource} alt="project_img" className="w-[40%] md:w-[90%] h-[65vh] md:h-[35vh] rounded-[10px] md:rounded-[5px]"/>
+                <img src={Opensource} alt="project_img" className="w-[40%] md:w-[95%] h-[65vh] md:h-[35vh] rounded-[10px] md:rounded-[5px]"/>
             </div>
 
             <hr className="h-[2px] w-[95%]"/>
 
             <div className="flex flex-row md:flex-col gap-7 py-[5%] md:py-[7%]   md:my-[10%] md:rounded-[5px]  items-center" >
-                <img src={Noter} alt="project_img" className="w-[40%] md:w-[90%] h-[65vh] md:h-[35vh] rounded-[10px] md:rounded-[5px]"/>
+                <img src={Noter} alt="project_img" className="w-[40%] md:w-[95%] h-[65vh] md:h-[35vh] rounded-[10px] md:rounded-[5px]"/>
 
                 <div className="text-center ">
                     <h1 className="text-[30px] uppercase my-[2%] font-semibold">Noter</h1>
@@ -109,13 +109,13 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <img src={Infest2k24} alt="project_img" className="w-[40%] md:w-[90%] h-[65vh] md:h-[35vh] rounded-[10px] md:rounded-[5px]"/>
+                <img src={Infest2k24} alt="project_img" className="w-[40%] md:w-[95%] h-[65vh] md:h-[35vh] rounded-[10px] md:rounded-[5px]"/>
             </div>
 
             <hr className="h-[2px] w-[95%]"/>
-            
+
             <div className="flex flex-row md:flex-col gap-7 py-[5%] md:py-[7%]   md:my-[10%] md:rounded-[5px]  items-center" >
-                <img src={Foodspot} alt="project_img" className="w-[40%] md:w-[90%] h-[65vh] md:h-[35vh] rounded-[10px] md:rounded-[5px]"/>
+                <img src={Foodspot} alt="project_img" className="w-[40%] md:w-[95%] h-[65vh] md:h-[35vh] rounded-[10px] md:rounded-[5px]"/>
 
                 <div className=" text-center">
                     <h1 className="text-[30px] uppercase my-[2%] font-semibold">Foodspot</h1>

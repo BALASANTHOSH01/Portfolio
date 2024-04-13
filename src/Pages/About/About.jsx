@@ -49,7 +49,7 @@ const About = () => {
 
       </div>
 
-      <div className="text-center my-[5%] overflow-hidden">
+      <div className="text-center my-[5%] md:mt-[20%] overflow-hidden">
         <h1 className=" text-[40px] uppercase text-white font-extrabold">
           Technical Stack
         </h1>
