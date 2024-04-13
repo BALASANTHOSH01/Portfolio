@@ -73,7 +73,7 @@ const AboutAnimation = () => {
   }, []);
 
   return (
-    <div>
+    <div className=" opacity-35 md:hidden">
       <img
         src={Reactjs}
         alt="reactjs"
@@ -109,7 +109,7 @@ const AboutAnimation = () => {
       <img
         src={Docker}
         alt="Docker"
-        className={`absolute w-[35px] rounded-[0%] top-[23%] right-[5%] ${
+        className={`absolute w-[65px] rounded-[0%] top-[23%] right-[5%] ${
           isVisible ? "blink" : ""
         }`}
         style={{ animationDelay: `${blinkDelays.Docker}ms` }}

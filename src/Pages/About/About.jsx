@@ -13,7 +13,7 @@ const About = () => {
       <img
         src={BS_Img}
         alt="Img"
-        className="rounded-[50%] md:w-[80%]  w-[30%] mx-auto"
+        className="rounded-[50%] md:w-[80%]  w-[30%] mx-auto z-30"
       />
 
       <div className="my-[2%] flex flex-row md:flex-col px-[8%] mx-auto">

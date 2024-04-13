@@ -4,6 +4,7 @@ import { IoLogoGithub as Github } from "react-icons/io5";
 import { MdAlternateEmail as Email } from "react-icons/md";
 import { useEffect, useState } from "react";
 import { RxHamburgerMenu as MenuIcon } from "react-icons/rx";
+import MobileNavBar from "./MobileNavBar";
 
 const NavBar = () => {
   const location = useLocation();
@@ -12,6 +13,14 @@ const NavBar = () => {
   const handleNav = (page) => {
     setNavItem(page);
   };
+
+  const[MobileNav,setMobileNav]=useState(false);
+  const handleMobileNav=()=>{
+    setMobileNav((prev)=>!prev);
+  }
+  useEffect(()=>{
+    handleMobileNav();
+  },[location.pathname])
 
   useEffect(() => {
     switch (location.pathname) {
@@ -36,8 +45,10 @@ const NavBar = () => {
           </p>
         </div>
 
-        <div className="text-white text-[35px] font-bold hidden md:block cursor-pointer">
-          <MenuIcon/>
+        <div className="text-white text-[35px] font-bold hidden md:block ease-out duration-300">
+          {
+            MobileNav === false ? <MenuIcon className="cursor-pointer" onClick={()=>handleMobileNav()}/> : <MobileNavBar handleMobileNav={handleMobileNav} />
+          }
         </div>
 
         <div className="md:hidden flex flex-row justify-between ml-[7%] text-gray-400 w-[25%]">
