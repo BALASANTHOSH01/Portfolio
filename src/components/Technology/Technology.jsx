@@ -9,15 +9,16 @@ const Technology = () => {
       {technologyList.map((technology) => (
         <div
           key={technology.name}
-          className={`p-5 cursor-pointer hover:bg-gray-800 flex flex-col gap-1 mx-auto duration-700`}
+          className={`p-4 cursor-pointer hover:bg-gray-800 flex flex-col gap-1 mx-auto duration-700 relative`}
           onMouseEnter={()=>setHovered(technology.name)}
           onMouseLeave={()=>setHovered(null)}
         >
-          <img src={technology.img} alt="tech_img" className={`w-[55px] h-[55px] ${hovered === technology.name && "w-[33px] h-[33px] mx-auto "}`} />
+          <img src={technology.img} alt="tech_img" className={`w-[55px] h-[55px]  ${hovered === technology.name && " opacity-10"} `} />
+
           {
             hovered === technology.name && (
-              <div className="mx-auto  text-white font-bold text-[12px] text-center">
-                <p>{technology.name}</p>
+              <div className="absolute mx-auto flex justify-center items-center text-white font-bold text-[15px] text-center">
+                <p className=" text-center">{technology.name}</p>
               </div>
             )
           }

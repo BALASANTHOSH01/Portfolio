@@ -27,7 +27,7 @@ const technologyList = [
     img: CSS,
   },
   {
-    name: "JS",
+    name: "JavaScript",
     img: JS,
   },
   {
@@ -39,7 +39,7 @@ const technologyList = [
     img: Bootstrap,
   },
   {
-    name: "Tailwindcss",
+    name: "Tailwind",
     img: Tailwindcss,
   },
   {
