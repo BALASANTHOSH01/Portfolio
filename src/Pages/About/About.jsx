@@ -26,7 +26,7 @@ const About = () => {
           </h1>
         </div>
 
-        <div className=" text-[16px] md:mt-[3%] text-gray-300 ml-[5%] font-thin font-Poppins">
+        <div className=" text-[16px] md:mt-[3%] text-gray-300 ml-[5%] md:ml-[1%] font-thin font-Poppins">
           <p className="mt-[3%]">
           <span className="text-white text-[18px] font-bold ">Bala Santhosh </span>, a luminary in the realm of Full Stack Development, hails from the vibrant cityscape of Coimbatore, where his journey in web technologies began. Fueled by an insatiable thirst for knowledge, Bala embarked on a path of discovery, guided by his pursuit of excellence. Through his academic pursuits at Info Institute of Engineering, he forged a strong foundation in IT, laying the groundwork for his burgeoning career.
           </p>

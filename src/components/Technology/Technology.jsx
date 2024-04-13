@@ -5,7 +5,7 @@ const Technology = () => {
   const [hovered,setHovered]=useState(false);
 
   return (
-    <div className="grid grid-cols-5 md:grid-cols-3 gap-[8%] px-[5%] py-[5%] mx-auto h-screen md:mb-[25%]">
+    <div className="grid grid-cols-5 md:grid-cols-3 gap-[8%] px-[5%] py-[5%] mx-auto h-screen md:mb-[20%]">
       {technologyList.map((technology) => (
         <div
           key={technology.name}
