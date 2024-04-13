@@ -1,12 +1,15 @@
 import BS_Img from "../../assets/Images/BS.jpg";
 import Technology from "../../components/Technology/Technology";
 import santhoshImg from "../../assets/Images/Santhosh-img.png";
+import AboutAnimation from "../../components/Animations/AboutAnimation";
 
 const About = () => {
   return (
-    <div>
+    <div className="mt-[5%] relative">
 
-      <h1 className="hidden md:block text-white font-semibold text-[30px] text-center mb-[10%]">About Me</h1>
+      <AboutAnimation/>
+
+      <h1 className="hidden md:block  text-white font-semibold text-[30px] text-center mb-[10%]">About Me</h1>
       <img
         src={BS_Img}
         alt="Img"
@@ -15,7 +18,7 @@ const About = () => {
 
       <div className="my-[2%] flex flex-row md:flex-col px-[8%] mx-auto">
 
-        <div className=" flex flex-col md:flex-row md:gap-[4%] md:justify-center text-white font-extrabold text-[60px] md:text-[40px] w-[30%] md:w-full">
+        <div className=" flex flex-col md:flex-row md:gap-[4%] md:justify-center text-white font-extrabold text-[60px] md:text-[40px] w-[30%] md:w-full font-Poppins">
           <h1 className="md:hidden">About</h1>
           <h1>Bala</h1>
           <h1>
@@ -28,33 +31,19 @@ const About = () => {
 
         <div className=" text-[16px] text-gray-300 ml-[5%] font-thin font-Poppins">
           <p className="mt-[3%]">
-            Tatev Aslanyan is a seasoned Data Science and AI professional with
-            over half a decade of international experience in Europe and North
-            America. She holds a Bachelor’s and Master’s degree in #1 ranked
-            technical program, Econometrics and Operations Research from
-            reputable universities in Netherlands.
+          <span className="text-white text-[18px] font-bold ">Bala Santhosh </span>, a luminary in the realm of Full Stack Development, hails from the vibrant cityscape of Coimbatore, where his journey in web technologies began. Fueled by an insatiable thirst for knowledge, Bala embarked on a path of discovery, guided by his pursuit of excellence. Through his academic pursuits at Info Institute of Engineering, he forged a strong foundation in IT, laying the groundwork for his burgeoning career.
           </p>
 
           <p className="mt-[3%]">
-            Tatev is the Co-founder of LunarTech where she aims to make Data
-            Science and AI accessible to everyone – individuals, businesses and
-            institutions.
+          As the Web Development Lead of his college&apos;s GDSC, Bala inspires and guides fellow enthusiasts in their journey through the digital landscape. His commitment to innovation was further showcased in his participation in the Google Solution Challenge 2024, securing recognition and a certificate for his outstanding contributions. Proficient in HTML5, CSS, JavaScript, React.js, and Node.js, Bala is an architect of captivating user experiences, blending artistry with functionality seamlessly.
           </p>
 
           <p className="mt-[3%]">
-            With expertise spanning Machine Learning, Deep Learning, NLP,
-            Statistical Modelling, and Advanced Analytics, Tatev has led
-            numerous successful Data Science and AI projects at leading tech
-            companies across the world showcasing a deep understanding of all
-            data science domains.
+          Moreover, Bala&apos;s leadership extends beyond coding as he serves as the Web Development Lead of his college&apos;s GDSC. His commitment to innovation was further showcased in his participation in the Google Solution Challenge 2024, where he secured recognition and a certificate for his outstanding contributions.
           </p>
 
           <p className="mt-[3%]">
-            Tatev has contributed to the research community with first-authored
-            papers in Recommender Systems at globally recognized ML and NLP
-            scientific journals, fostering an open-source environment. Her
-            commitment to education is evident in years of teaching and creating
-            the acclaimed “The Ultimate Data Science Bootcamp” at LunarTech.
+          As his journey unfolds, Bala&apos;s horizon expands as he delves into the realm of AI technology, driven by a newfound passion to explore the frontiers of artificial intelligence. In the ever-evolving tech ecosystem, Bala Santhosh stands as a beacon of creativity and ingenuity, shaping the digital landscape one line of code at a time.
           </p>
 
         </div>

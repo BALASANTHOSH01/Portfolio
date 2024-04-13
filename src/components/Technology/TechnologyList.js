@@ -51,12 +51,12 @@ const technologyList = [
     img: Expressjs,
   },
   {
-    name: "MongoDB",
-    img: MongoDB,
+    name: "Python",
+    img: Python,
   },
   {
-    name: "Mysql",
-    img: Mysql,
+    name: "Django",
+    img: Django,
   },
   {
     name: "Git",
@@ -67,12 +67,12 @@ const technologyList = [
     img: Docker,
   },
   {
-    name: "Python",
-    img: Python,
+    name: "MongoDB",
+    img: MongoDB,
   },
   {
-    name: "Django",
-    img: Django,
+    name: "Mysql",
+    img: Mysql,
   },
   {
     name: "Sqlite",
