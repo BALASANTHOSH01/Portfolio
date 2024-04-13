@@ -34,6 +34,8 @@ const Projects = () => {
                 </div>
             </div>
 
+            <hr className="h-[2px] w-[95%]"/>
+
             <div className="flex flex-row md:flex-col gap-7 py-[5%] md:py-[7%]   md:my-[10%] md:rounded-[5px]  items-center" >
                 <div className="text-center ">
                     <h1 className="text-[30px] uppercase my-[2%] font-semibold">OpenHire</h1>
@@ -57,6 +59,8 @@ const Projects = () => {
 
                 <img src={Opensource} alt="project_img" className="w-[40%] md:w-[90%] h-[65vh] md:h-[35vh] rounded-[10px] md:rounded-[5px]"/>
             </div>
+
+            <hr className="h-[2px] w-[95%]"/>
 
             <div className="flex flex-row md:flex-col gap-7 py-[5%] md:py-[7%]   md:my-[10%] md:rounded-[5px]  items-center" >
                 <img src={Noter} alt="project_img" className="w-[40%] md:w-[90%] h-[65vh] md:h-[35vh] rounded-[10px] md:rounded-[5px]"/>
@@ -82,6 +86,8 @@ const Projects = () => {
                 </div>
             </div>
 
+            <hr className="h-[2px] w-[95%]"/>
+
             <div className="flex flex-row md:flex-col gap-7 py-[5%] md:py-[7%]   md:my-[10%] md:rounded-[5px]  items-center" >
                 <div className=" text-center">
                     <h1 className="text-[30px] uppercase my-[2%] font-semibold">Infest2k24</h1>
@@ -106,6 +112,8 @@ const Projects = () => {
                 <img src={Infest2k24} alt="project_img" className="w-[40%] md:w-[90%] h-[65vh] md:h-[35vh] rounded-[10px] md:rounded-[5px]"/>
             </div>
 
+            <hr className="h-[2px] w-[95%]"/>
+            
             <div className="flex flex-row md:flex-col gap-7 py-[5%] md:py-[7%]   md:my-[10%] md:rounded-[5px]  items-center" >
                 <img src={Foodspot} alt="project_img" className="w-[40%] md:w-[90%] h-[65vh] md:h-[35vh] rounded-[10px] md:rounded-[5px]"/>
 
