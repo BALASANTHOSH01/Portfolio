@@ -37,6 +37,7 @@
     animation: heroAnimation 5s ease infinite;
 } */
 
+
 @layer components {
   .bgBlur {
     backdrop-filter: theme("blur.3xl");

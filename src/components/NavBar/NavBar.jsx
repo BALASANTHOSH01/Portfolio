@@ -38,7 +38,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className=" flex flex-row items-center md:py-[5%] justify-between w-full px-[5%] p-4">
+      <div className=" flex flex-row z-50 items-center md:py-[5%] justify-between w-full px-[4%] pt-5">
         <div className=" w-[20%]">
           <p className=" text-3xl sm:text-[40px] text-transparent bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text font-Rubik">
             BS
