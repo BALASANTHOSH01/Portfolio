@@ -23,19 +23,19 @@ const ProjectPage = () => {
       {/**Back Button */}
       <Link
         to={"/"}
-        className="fixed cursor-pointer bg-gray-800 p-4 text-[22px] text-gray-300 rounded-[50%] left-[2%] top-[23%] hover:bg-gray-700 hover:text-gray-50 duration-200"
+        className="fixed md:absolute cursor-pointer bg-gray-800 p-4 md:p-3 md:text-[20px] text-[22px] text-gray-300 rounded-[50%] left-[2%] top-[23%] md:top-[18%] hover:bg-gray-700 hover:text-gray-50 duration-200"
       >
         <BackIcon />
       </Link>
 
       {/**Project Title */}
-      <div className=" mt-[5%] flex flex-row items-center gap-2">
+      <div className=" mt-[5%] md:mt-[15%] flex flex-row items-center gap-2">
         <a href={project.website} target="_blank" rel="noreferrer" className=" text-[50px] text-white font-bold hover:underline">{project.title}</a>
         <LinkIcon className="text-[18px]"/>
       </div>
 
       {/**Scrum Master */}
-      <div className="my-[1%] mt-[5%] flex flex-row items-center text-gray-400 gap-2 font-semibold">
+      <div className="my-[1%] mt-[5%] md:my-[4%] md:mt-[7%] flex flex-row items-center text-gray-400 gap-2 font-semibold">
         <p>Home</p>
         <ScrumIcon />
         <p>Portfolio</p>
@@ -43,19 +43,19 @@ const ProjectPage = () => {
         <p className="text-white">{project.title}</p>
       </div>
 
-      <div className="flex flex-row gap-[10%] items-start text-gray-400 w-[80%] my-[3%] font-semibold">
+      <div className="flex flex-row md:flex-col gap-[10%] md:gap-[2%] items-start text-gray-400 w-[80%] md:w-[97%] my-[3%] font-semibold">
         {/**Description */}
-        <div>
+        <div className=" md:my-[5%]">
           <p className=" text-[16px]">{project.desc1}</p>
           <p className=" text-[16px] mt-[2%]">{project.desc2}</p>
         </div>
 
         {/** Technology */}
-        <div>
+        <div className=" md:mt-[6%]">
           <p className=" text-[23px] text-white">Technologies</p>
-          <hr className=" my-[1%]" />
+          <hr className=" my-[1%] md:w-[40%]" />
 
-          <div className=" flex flex-col items-center gap-2 my-[3%] mt-[6%]">
+          <div className=" flex flex-col md:flex-row items-center gap-2 my-[3%] mt-[6%]">
             {project.technology.map((technology) => (
               <p key={technology}>{technology}</p>
             ))}
@@ -63,7 +63,7 @@ const ProjectPage = () => {
         </div>
       </div>
 
-      <div className=" flex flex-roww items-center">
+      <div className=" flex flex-roww items-center md:mt-[6%]">
         <div className=" flex flex-row text-white items-center gap-2 text-[20px] font-semibold">
           <p>Project Links :</p>
          
