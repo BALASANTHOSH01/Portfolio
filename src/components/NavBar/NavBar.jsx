@@ -1,13 +1,24 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { FaLinkedinIn as LinkedIn } from "react-icons/fa6";
 import { IoLogoGithub as Github } from "react-icons/io5";
 import { MdAlternateEmail as Email } from "react-icons/md";
 import { useEffect, useState } from "react";
 import { RxHamburgerMenu as MenuIcon } from "react-icons/rx";
 import MobileNavBar from "./MobileNavBar";
+import { IoArrowBack as BackIcon } from "react-icons/io5";
 
 const NavBar = () => {
   const location = useLocation();
+  const {projecttitle} = useParams();
+
+  const[pageLocation,setPageLocation]=useState("home");
+  useEffect(() => {
+    if (location.pathname === `/projects/${projecttitle}`) {
+      setPageLocation("projects");
+    } else {
+      setPageLocation("home");
+    }
+  }, [location.pathname, projecttitle]);
 
   const [navItem, setNavItem] = useState("home");
   const handleNav = (page) => {
@@ -40,9 +51,25 @@ const NavBar = () => {
     <div>
       <div className=" flex flex-row z-50 items-center md:py-[5%] justify-between w-full px-[4%] pt-5">
         <div className=" w-[20%]">
-          <p className=" text-3xl sm:text-[40px] text-transparent bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text font-Rubik">
-            BS
-          </p>
+
+          {
+            pageLocation === "projects" ? 
+            (
+              <Link
+                to={"/"}
+                className="fixed md:absolute cursor-pointer bg-gray-800 p-4 md:p-3 md:text-[20px] text-[22px] text-gray-200 rounded-[50%] left-[5%] top-[23%] md:top-[4%] hover:bg-gray-700 hover:text-gray-50 duration-200"
+              >
+                <BackIcon />
+              </Link>
+            )
+            : 
+            (
+              <p className=" text-3xl sm:text-[40px] text-transparent bg-gradient-to-b from-red-500 to-yellow-500 bg-clip-text font-Rubik">
+                 BS
+              </p>
+            )
+          }
+          
         </div>
 
         <div className="text-white text-[35px] font-bold hidden md:block ease-out duration-300">
