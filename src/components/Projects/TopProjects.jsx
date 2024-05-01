@@ -15,7 +15,7 @@ const TopProjects = () => {
           <Link 
             to={`/projects/${project.title}`}
             key={project.github}
-            className="group rounded-[5px] overflow-hidden w-[80%] md:my-[3%] mx-auto p-7 hover:bg-gray-800 cursor-pointer duration-500"
+            className="group rounded-[5px] overflow-hidden w-[80%] md:my-[8%] mx-auto p-7 hover:bg-gray-800 md:bg-gray-800 cursor-pointer duration-500"
             onMouseEnter={()=>handleHover(project.title)}
             onMouseLeave={()=>handleHover(null)}
           >
