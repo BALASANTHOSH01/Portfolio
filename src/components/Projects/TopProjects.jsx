@@ -10,12 +10,12 @@ const TopProjects = () => {
     setHovered(project);
   }
   return (
-    <div className="w-full grid grid-cols-3 md:grid-cols-2 justify-center mx-auto my-[4%]">
+    <div className="w-full grid grid-cols-3 md:grid-cols-1 justify-center mx-auto my-[4%]">
         {AllProjects.map((project) => (
           <Link 
             to={`/projects/${project.title}`}
             key={project.github}
-            className="group rounded-[5px] overflow-hidden w-[80%] mx-auto p-7 hover:bg-gray-800 cursor-pointer duration-500"
+            className="group rounded-[5px] overflow-hidden w-[80%] md:my-[3%] mx-auto p-7 hover:bg-gray-800 cursor-pointer duration-500"
             onMouseEnter={()=>handleHover(project.title)}
             onMouseLeave={()=>handleHover(null)}
           >
