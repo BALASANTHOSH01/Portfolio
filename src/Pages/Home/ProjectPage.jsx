@@ -18,6 +18,10 @@ const ProjectPage = () => {
     );
   }
 
+  document.documentElement.scrollTop =0;
+
+
+
   return (
     <div className=" ml-[8%] text-gray-400 pb-[5%]">
       {/**Back Button */}

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import AllProjects from "./ProjectDetails";
+import AllProjectsData from "./ProjectDetails";
 import { useState } from "react";
 import { IoArrowForwardOutline as ArrowIcon} from "react-icons/io5";
 
@@ -8,11 +8,14 @@ const TopProjects = () => {
   const[hovered,setHovered]=useState(null);
   const handleHover = (project) =>{
     setHovered(project);
-  }
+  };
+
+
   return (
     <div className="w-full grid grid-cols-3 md:grid-cols-1 justify-center mx-auto my-[4%]">
-        {AllProjects.map((project) => (
-          <Link 
+        {AllProjectsData.map((project) => (
+          project.top5 === true && (
+            <Link 
             to={`/projects/${project.title}`}
             key={project.github}
             className="group rounded-[5px] overflow-hidden w-[80%] md:my-[8%] mx-auto p-7 hover:bg-gray-800 md:bg-gray-800 cursor-pointer duration-500"
@@ -43,6 +46,7 @@ const TopProjects = () => {
               </div>
             </div>
           </Link>
+          ) 
         ))}
       </div>
   )
