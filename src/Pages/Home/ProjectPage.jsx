@@ -77,10 +77,15 @@ const ProjectPage = () => {
 
           <a href={project.website} target="_blank" rel="noreferrer" className="flex flex-row gap-1 items-center uppercase cursor-pointer hover:text-white underline">
             <WebsiteIcon />
-            <p>WWW</p>
+            <p>{project.title}</p>
             <LinkIcon />
           </a>
         </div>
+      </div>
+
+      <div className=" my-[5%] flex flex-col justify-center items-center ml-[-5%]">
+        <img src={project.img1} alt="Image" className="w-[90%] md:w-[95%] md:h-[50vh]"/>
+        <a href={project.website} className="mt-[3%] p-1 px-6 rounded-[25px] text-[20px] bg-white text-black font-semibold hover:border hover:border-gray-300 hover:text-white hover:bg-black duration-300">View</a>
       </div>
     </div>
   );

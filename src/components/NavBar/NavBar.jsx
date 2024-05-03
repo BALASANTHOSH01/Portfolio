@@ -51,7 +51,7 @@ const NavBar = () => {
   return (
     <div>
       <div className=" flex flex-row z-50 items-center md:py-[5%] justify-between w-full px-[4%] pt-5">
-        <motion.div whileTap={{scale:0.8}} className=" w-[20%]">
+        <div className=" w-[20%]">
 
           {
             pageLocation === "projects" ? 
@@ -59,7 +59,7 @@ const NavBar = () => {
               <Link
                 
                 to={"/"}
-                className="fixed md:absolute cursor-pointer bg-gray-800 p-4 md:p-3 md:text-[20px] text-[22px] text-gray-200 rounded-[50%] left-[5%] top-[23%] md:top-[4%] hover:bg-gray-700 hover:text-gray-50 duration-200"
+                className="fixed md:absolute cursor-pointer bg-gray-800 p-2 md:p-3 md:text-[20px] text-[22px] text-gray-200 rounded-[50%] left-[4.5%] top-[3.5%] md:top-[4%] hover:bg-gray-700 hover:text-gray-50 duration-200"
               >
                 <BackIcon />
               </Link>
@@ -72,7 +72,7 @@ const NavBar = () => {
             )
           }
           
-        </motion.div>
+        </div>
 
         <div className="text-white text-[35px] font-bold hidden md:block ease-out duration-300">
           {

@@ -1,4 +1,4 @@
-import {Foodspot,Greenharbor,Infest,Noter,Opensource, FoodspotThumb, GreenharborThumb,InfestThumb,OpensourceThumb} from "../../assets/Images/Projects/index.js";
+import {Foodspot,Greenharbor,Infest,Noter,Opensource, FoodspotThumb, GreenharborThumb,InfestThumb,OpensourceThumb,Coderscave,CoderscaveThumb} from "../../assets/Images/Projects/index.js";
 
 
 const AllProjects = [
@@ -22,7 +22,18 @@ const AllProjects = [
         desc2:"OpenHire embraces modern recruitment practices by facilitating virtual interviews, enabling seamless connections between hiring managers and candidates regardless of geographical barriers. Additionally, with support for multiple site job postings, organizations can expand their reach and attract a wider pool of qualified candidates.",
         github:"https://github.com/BALASANTHOSH01/Next_Gen_RMS",
         website:"https://next-gen-rms.vercel.app/",
-        technology:["Git ,","Github"],
+        technology:["ReactJS ,","TailwindCSS ,","Git ," ,"Github"],
+    },
+    {
+        thumbnail:CoderscaveThumb,
+        img1:Coderscave,
+        title:"Coderscave",
+        category:"Web Development",
+        desc1:"Coderscave is an innovative tech hub fostering a vibrant community of learners and creators. Through our virtual internship platform, we empower aspiring developers and enthusiasts to explore cutting-edge technologies. With hands-on experience and expert mentorship, Coderscave serves as a launchpad for talent in web development.",
+        desc2:"At Coderscave, we're not just shaping the future; we're building it, one line of code at a time. Our passion for innovation extends beyond education to offering bespoke web development services for businesses. Leveraging expertise in tools like NextJS, TailwindCSS, and Chakra UI, we create solutions that elevate our clients' online presence.",
+        github:"https://github.com/ManojKumar2920/nextjs-migrate",
+        website:"https://www.coderscave.in",
+        technology:["Reactjs ,","TailwindCSS ,","Vercel ,","chakra-ui "],
     },
     {
         thumbnail:Noter,
